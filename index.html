@@ -1,41 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World</title>
+    </head>
+    <body>
 
-    <h1 id="titulo"></h1>
-    <h2 id="descritivo"></h2>
-    
-    <h3 id="label-itens"></h3>
-    <ul id="lista-itens"></ul>
+  <h1 id="titulo"></h1>
 
-    <script>
-        // Preenchendo os textos simples
-        document.getElementById("titulo").innerText = "Hello, World!";
-        document.getElementById("descritivo").innerText = "Aplicação teste, criada com o objetivo de praticar conhecimentos";
-        document.getElementById("label-itens").innerText = "Itens de descrição:";
+  <h2 id="descritivo"></h2>
 
-        // 1. Criamos um Array (lista) com as informações que queremos adicionar
-        const informacoes = [
-            "Praticar manipulação de DOM",
-            "Estudar estrutura de HTML",
-            "Aprender Git Flow",
-            "Configurar repositórios no GitHub"
-        ];
+  <h3 id="itens"></h3>
 
-        // 2. Selecionamos a lista no HTML
-        const lista = document.getElementById("lista-itens");
-
-        // 3. Usamos um loop para criar um <li> para cada item do array
-        informacoes.forEach(texto => {
-            let li = document.createElement("li"); // Cria o elemento de lista
-            li.innerText = texto;                  // Define o texto
-            lista.appendChild(li);                 // Adiciona na <ul>
-        });
-    </script>
+  <script>
+    document.getElementById("titulo").innerText = "Hello, World!";
+    document.getElementById("descritivo").innerText = "Aplicação teste, criada com o objetivo de praticar conhecimentos";
+    document.getElementById("itens").innerText = "Itens de descrição"
+  </script>
 
 </body>
 </html>
