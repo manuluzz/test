@@ -13,12 +13,12 @@
     <ul id="lista-itens"></ul>
 
     <script>
-        // Preenchendo os textos simples
+        
         document.getElementById("titulo").innerText = "Hello, World!";
         document.getElementById("descritivo").innerText = "Aplicação teste, criada com o objetivo de praticar conhecimentos";
         document.getElementById("label-itens").innerText = "Itens de descrição:";
 
-        // 1. Criamos um Array (lista) com as informações que queremos adicionar
+        
         const informacoes = [
             "Praticar manipulação de DOM",
             "Estudar estrutura de HTML",
@@ -26,14 +26,12 @@
             "Configurar repositórios no GitHub"
         ];
 
-        // 2. Selecionamos a lista no HTML
         const lista = document.getElementById("lista-itens");
 
-        // 3. Usamos um loop para criar um <li> para cada item do array
         informacoes.forEach(texto => {
-            let li = document.createElement("li"); // Cria o elemento de lista
-            li.innerText = texto;                  // Define o texto
-            lista.appendChild(li);                 // Adiciona na <ul>
+            let li = document.createElement("li"); 
+            li.innerText = texto;                  
+            lista.appendChild(li);                 
         });
     </script>
 
